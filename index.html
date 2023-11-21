@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personal Website</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-image: url('688572.jpg');
+  background-size: cover;
+  background-position: center;
+  line-height: 1.5;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: #f5f5f5;
+}
+
+nav {
+  background-color: #222;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  text-align: center;
+  padding: 50px 0;
+  position: relative;
+  z-index: 0;
+}
+
+h1 {
+  margin-bottom: 50px;
+}
+
+.divider {
+  margin: 0;
+  text-align: center;
+  border-top: 2px solid #ccc;
+  width: 100%;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.section {
+  margin-bottom: 0;
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+.section h1 {
+  margin-bottom: 10px;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.section ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: 1.5;
+}
+
+footer {
+  font-size: 15px;
+  margin-bottom: 0%;
+  margin-top: 20px;
+  background-color: #050000;
+  padding: 20px 0;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+img {
+  height: 20%;
+  width: 20%;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 2;
+  border: 10px solid #fff;
+}
+
+p,
+li,
+a {
+  font-family: 'Roboto', sans-serif;
+}
+
+img:hover {
+  transform: scale(1.01);
+}
+
+.parallax {
+  position: relative;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  z-index: 0;
+  border-bottom: 5px solid #fff;
+}
+
+.parallax-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.parallax-container {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.star {
+  width: 15px;
+  height: 15px;
+  border: 0px;
+}
+
+.skill {
+  text-align: left;
+  margin-left: 40%;
+}
+
+#contact-person {
+  text-align: center;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-list li {
+  margin: 0 10px;
+}
+
+.contact-list a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  transition: transform 1s, border 1s;
+  padding: 10px;
+  border-radius: 20%;
+}
+
+.contact-list a:hover {
+  transform: scale(1.1);
+  border: 1px solid #333;
+}
+
+.contact-list img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.dark-mode #mode-switch {
+  background-color: #333;
+  color: #fff;
+}
+
+  </style
+  
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#nama">Nama</a></li>
+      <li><a href="#ttl">TTL</a></li>
+      <li><a href="#riwayat-pendidikan">Riwayat Pendidikan</a></li>
+      <li><a href="#pengalaman">Pengalaman</a></li>
+      <li><a href="#skill">Skill</a></li>
+      <li><a href="#contact-person">Contact Person</a></li>
+    </ul>
+  </nav>
+  <div class="parallax"></div>
+  
+  <header>
+    <img src="profil.jpg" alt="Profil Foto" id="nama">
+    <h1>Akbar Muhammad Sadat</h1>
+  </header>
+
+  <div class="divider"></div>
+  
+  <div class="section">
+    <h1 id="ttl">Tempat dan Tanggal Lahir</h1>
+    <p>Jombang, 13 September 2003</p>
+  </div>
+  <div class="divider"></div>
+  
+  <div class="section">
+    <h1 id="riwayat-pendidikan">Riwayat Pendidikan</h1>
+    <ul>
+      <li>Sekolah Dasar negeri 1 Kayangan</li>
+      <li>Sekolah Menengah Pertama Negeri 1 Jombang</li>
+      <li>Sekolah Menengah Kejuruan Telkom Malang</li>
+      <li>S1 Informatika Institut Teknoogi Telkom Surabaya</li>
+    </ul>
+  </div>
+  
+  <div class="divider"></div>
+  
+  <div class="section">
+    <h1 id="pengalaman">Pengalaman Kerja dan Status Saat Ini</h1>
+    <p>Seorang Mahasiswa biasa di Surabaya. bekerja serabutan sedari SMP<br>
+        . membuka Jasa joki tugas, desain, serta Laporan. Terkadang membuat projek IoT
+        . Membantu pemasangan Jaringan <br> di sebuah daerah. pemasangan server untuk UNBK<br>
+    </p>
+  </div>
+  <div class="divider"></div>
+  <div class="section">
+    <h1>Skill</h1>
+    <ul>
+        <ul class="skill" id="skill">
+            <li>Editing Video: <img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star2.png" alt="Icon"><img class="star" src="star2.png" alt="Icon"></li>
+            <li>Editing Foto: <img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star2.png" alt="Icon"><img class="star" src="star2.png" alt="Icon"></li>
+            <li>Bahasa Program C: <img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star2.png" alt="Icon"></li>
+            <li>HTML: <img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star2.png" alt="Icon"></li>
+            <li>CSS: <img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"></li>
+            <li>Networking Infrastructure: <img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star2.png" alt="Icon"></li>
+            <li>Operating System: <img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star2.png" alt="Icon"></li>
+            <li>UI/UX Designer:  <img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star2.png" alt="Icon"></li>
+            <li>PHP MySQL: <img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star2.png" alt="Icon"><img class="star" src="star2.png" alt="Icon"></li>
+            <li>Routing: <img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star.png" alt="Icon"><img class="star" src="star2.png" alt="Icon"><img class="star" src="star2.png" alt="Icon"></li>
+          </ul>
+          <div class="divider"></div>
+          <div class="section" id="contact-person">
+  <h1>Contact Person</h1>
+  <ul class="contact-list">
+    <li>
+      <a href="https://wa.me/082336546903" target="_blank">
+        <img src="whatsapp.png" alt="WhatsApp Icon">
+        WhatsApp
+      </a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/ciman_creation/" target="_blank">
+        <img src="instagram.png" alt="Instagram Icon">
+        Instagram
+      </a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/Akbar Sadat/" target="_blank">
+        <img src="facebook.png" alt="Facebook Icon">
+        Facebook
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/Codex2142" target="_blank">
+        <img src="github.png" alt="GitHub Icon">
+        GitHub
+      </a>
+    </li>
+  </ul>
+</div>
+          
+
+  
+  <footer>
+    <p>© 2023 Akbar</p>
+  </footer>
+  
+  <script>
+    window.addEventListener('scroll', function() {
+  const parallax = document.querySelector('.parallax');
+  let scrollPosition = window.pageYOffset;
+  parallax.style.transform = 'translateY(' + scrollPosition * 0.3 + 'px)';
+});
+
+const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+smoothScrollLinks.forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    target.scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+const modeSwitch = document.getElementById('mode-switch');
+modeSwitch.addEventListener('click', function() {
+  document.body.classList.toggle('dark-mode');
+});
+
+  </script>
+</body>
+</html>
